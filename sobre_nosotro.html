@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoCasting</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <style>
+        
+
+
+        ion-card {
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        ion-card img {
+            width: 100px;
+            border-radius: 15px;
+            padding: 5px;
+        }
+        .background-image {
+            background-image: url(./estilos/mm.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <ion-app><br>
+        <ion-header>
+            <ion-toolbar style="--background: black;">
+              <ion-buttons slot="start" style="padding-right: 7px;">
+
+              </ion-buttons>
+              <ion-title style="font-size: 24px; color: white;">GoCasting</ion-title>
+              <ion-buttons slot="end">
+                <ion-button onclick=redireccion6() style="font-size: 14px; padding-right: 20px; color: white;">
+                  <ion-icon name="bulb-outline"></ion-icon>
+                  <p style="padding-left: 5px;">Como funciona</p>
+                </ion-button>
+                <ion-button onclick=redireccion5() style="font-size: 14px; padding-right: 20px; color: white;">
+                  <ion-icon name="person-circle"></ion-icon>
+                  <p style="padding-left: 5px;">Sobre nosotros</p>
+                </ion-button>
+                <ion-button style="font-size: 14px; padding-right: 20px; color: white;">
+                  <ion-icon name="newspaper"></ion-icon>
+                  <p style="padding-left: 5px;">Blog</p>
+                </ion-button>
+              </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-button style="font-size: 20px; color: white; width: 80px;">
+                  <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </ion-button>
+                <ion-button style="font-size: 20px; color: white; ">
+                  <ion-icon name="notifications-outline"></ion-icon>
+                  <ion-badge>3</ion-badge>
+                </ion-button>
+                <ion-button id="user-button" style="font-size: 20px; color: white; width: 70px;">
+                  <ion-icon name="person-circle-outline" color="light"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-header>
+
+          <ion-popover id="user-menu" translucent position="bottom">
+            <ion-list>
+                <ion-item>
+                    <ion-label>Tablero</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Mi calendario</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Mis trabajos</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Invitar usuarios</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Preguntas más frecuentes</ion-label>
+                </ion-item>
+            </ion-list>
+        </ion-popover>
+
+
+        <ion-content>
+            <ion-card><center>
+                <ion-img src="./imagenes/logo.jpg"></ion-img>
+                <ion-card-header>
+                    <ion-card-title>Sobre nosotros</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    <p>Somos GoCasting, una plataforma dedicada a impulsar las carreras de modelos en la industria del
+                        entretenimiento. Conectamos a talentosos modelos con oportunidades emocionantes y brindamos una
+                        experiencia fácil y segura para que puedan destacar en su carrera.</p>
+                    <h2>Nuestra misión</h2>
+                    <p>Conectar a modelos talentosos con oportunidades de trabajo en la industria del entretenimiento de
+                        manera eficiente y transparente.</p>
+                    <h2>Nuestro equipo</h2>
+                    <ul>
+                        <p>Nicolas</li>
+                        <p>Fabian</li>
+                        <p>Santiago</li>
+                    </ul>
+                    <h2>Contacto</h2>
+                    <p>Puedes contactarnos a través de nuestras redes sociales</p>
+                    <h2>Ubicación</h2>
+                    <p>Estamos ubicados en Colombia, Bogotá D.C.</p>
+                </ion-card-content>
+            </ion-card></center>
+        </ion-content>
+    </ion-app>
+
+
+    
+    <script src="./js/funcionamiento.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="stylesheet" href="./estilos/style.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+
+
+    <!-- Encabezado -->
+    <ion-header>
+        <ion-toolbar style="--background: black;">
+            <ion-buttons slot="start" style="padding-right: 7px;">
+                <div class="logo">
+                    <img src="./imagenes/logo.jpg" style="width: 100px; border-radius: 15px; padding: 5px;">
+                </div>
+            </ion-buttons>
+            <ion-title style="font-size: 45px; color: white;">GoCasting</ion-title>
+            <ion-buttons slot="end">
+                <ion-button style="font-size: 20px; padding-right: 50px; color: white;">
+                    <ion-icon name="bulb-outline"></ion-icon>
+                    <p style="padding-left: 7px;">Como funciona</p>
+                </ion-button>
+                <ion-button onclick=redireccion5() style="font-size: 20px; padding-right: 50px; color: white;">
+                    <ion-icon name="person-circle"></ion-icon>
+                    <p style="padding-left: 7px;">Sobre nosotros</p>
+                </ion-button>
+                <ion-button style="font-size: 20px; padding-right: 50px; color: white;">
+                    <ion-icon name="newspaper"></ion-icon>
+                    <p style="padding-left: 7px;">Blog</p>
+                </ion-button>
+            </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button style="font-size: 25px; color: white; width: 100px;">
+                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </ion-button>
+                <ion-button style="font-size: 25px; color: white; ">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                    <ion-badge>3</ion-badge>
+                </ion-button>
+                <ion-button id="user-button" style="font-size: 25px; color: white; width: 90px;">
+                    <ion-icon name="person-circle-outline" color="light"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+        </ion-toolbar>
+    </ion-header>
+    <!-- Fin del encabezado -->
+
+    <!-- Menú desplegable -->
+
+    <ion-popover id="user-menu" translucent position="bottom">
+        <ion-list>
+            <ion-item>
+                <ion-label>Tablero</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>Mi calendario</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>Mis trabajos</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>Invitar usuarios</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>Preguntas más frecuentes</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-popover>
+
+    <!-- Fin del menu desplegable -->
+
+
+
+    <!-- Botones interactivos -->
+    <ion-content>
+        <div id="buttons-container">
+            <ion-buttons id="interactive-buttons" style="display: none;">
+                <input class="boton1" onclick="redireccion1()" type="button" value="Crea tu perfil"
+                    style=" background: url(./imagenes/registro.jpg); background-size: 500px 170px; background-repeat: no-repeat; background-position: center; ">
+                <input class="boton2" onclick="redireccion2()" type="button" value="Solicitudes de opciones"
+                    style=" background: url(./imagenes/opcines.jpg); background-size: 500px 170px; background-repeat: no-repeat; background-position: center; ">
+                <input class="boton3" onclick="redireccion3() "type="button" value="Gestionar informaciones"
+                    style=" background: url(./imagenes/confrimacion.jpg); background-size: 500px 170px; background-repeat: no-repeat; background-position: center; ">
+                <input class="boton4" onclick="redireccion4() "type="button"  value="Preguntas frecuentes para modelos"
+                    style=" background: url(./imagenes/preguntas.jpg); background-size: 500px 170px; background-repeat: no-repeat; background-position: center; ">
+            </ion-buttons>
+        </div>
+
+    </ion-content>
+    <!-- Fin de los botones interactivos -->
+
+
+
+
+
+
+<script src="./js/funcionamiento.js"></script>
+</body>
+
+</html>
